@@ -46,14 +46,16 @@ nav .nav_links li a {
 
 @media screen and (max-width: 768px) {
   body {
-    overflow: hidden;
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: fixed;
   }
-  nav .nav_links {
+  body nav .nav_links {
     position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
-    color: black;
     background-color: grey;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -62,8 +64,6 @@ nav .nav_links li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -75,7 +75,7 @@ nav .nav_links li a {
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
-  .hamburger {
+  body .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -90,13 +90,13 @@ nav .nav_links li a {
     height: 100%;
     justify-content: center;
   }
-  div {
+  body div {
     width: 30px;
     height: 3px;
     background-color: white;
     margin: 3px;
   }
-  nav .nav_active {
+  body nav .nav_active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
