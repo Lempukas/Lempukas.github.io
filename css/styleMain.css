@@ -47,8 +47,6 @@ nav .nav_links li a {
 @media screen and (max-width: 768px) {
   html,
   body {
-    position: relative;
-    height: 100%;
     width: 100%;
     overflow: hidden;
   }
