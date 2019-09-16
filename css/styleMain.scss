@@ -33,9 +33,11 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
   .wrapper {
     overflow-x: hidden;
-
     nav {
       .nav_links {
         position: absolute;

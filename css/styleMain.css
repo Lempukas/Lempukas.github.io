@@ -45,6 +45,9 @@ nav .nav_links li a {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
   .wrapper {
     overflow-x: hidden;
   }
