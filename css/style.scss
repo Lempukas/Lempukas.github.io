@@ -1,0 +1,133 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  // background-color: red;
+  display: grid;
+  margin: auto;
+  grid-template-areas:
+    "apie darbai"
+    "kontaktai blogas";
+  div {
+    width: 10em;
+    height: 10em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 9em;
+      height: 9em;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+      &:visited {
+        color: white;
+      }
+    }
+    .background {
+      position: fixed;
+      background-color: aqua;
+    }
+  }
+  //   background-color: black;
+  border-radius: 50%;
+}
+.apie {
+  grid-area: apie;
+  justify-self: flex-end;
+  position: relative;
+  border-radius: 10em 0 0 0;
+}
+.apie1 {
+  grid-area: apie;
+  justify-self: flex-end;
+  background-color: black;
+  position: relative;
+  border-radius: 10em 0.5em 0.5em 0.5em;
+  #apie {
+    transform: rotate(-45deg);
+    letter-spacing: 1px;
+  }
+}
+.portfolio {
+  grid-area: darbai;
+  position: relative;
+  border-radius: 0 10em 0 0;
+  #portfolio {
+    transform: rotate(45deg);
+    letter-spacing: 1px;
+    padding: 2em 1em;
+    cursor: pointer;
+  }
+}
+.portfolio1 {
+  grid-area: darbai;
+  background-color: black;
+  position: relative;
+  border-radius: 0.5em 10em 0.5em 0.5em;
+  #portfolio {
+    transform: rotate(45deg);
+    letter-spacing: 1px;
+    padding: 2em 1em;
+    cursor: pointer;
+  }
+}
+.kontaktai {
+  grid-area: kontaktai;
+  justify-self: flex-end;
+  position: relative;
+  border-radius: 0 0 0 10em;
+  #kontaktai {
+    transform: rotate(45deg);
+    letter-spacing: 2px;
+  }
+}
+.kontaktai1 {
+  grid-area: kontaktai;
+  justify-self: flex-end;
+  background-color: black;
+  position: relative;
+  border-radius: 0.5em 0.5em 0.5em 10em;
+  #kontaktai {
+    transform: rotate(45deg);
+    letter-spacing: 2px;
+    padding: 2em 1em;
+    cursor: pointer;
+  }
+}
+.ikvepimui {
+  grid-area: blogas;
+  position: relative;
+  border-radius: 0 0 10em 0;
+  #ikvepimui {
+    transform: rotate(-45deg);
+    letter-spacing: 1px;
+  }
+}
+.ikvepimui1 {
+  grid-area: blogas;
+  background-color: black;
+  position: relative;
+  border-radius: 0.5em 0.5em 10em 0.5em;
+  #ikvepimui {
+    transform: rotate(-45deg);
+    letter-spacing: 1px;
+    padding: 2em 1em;
+    cursor: pointer;
+  }
+}
+.logo {
+  width: 80%;
+  position: absolute;
+  img {
+    width: 100%;
+  }
+}
