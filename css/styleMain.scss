@@ -33,11 +33,9 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    height: 100%;
-    overflow: hidden !important;
-    width: 100%;
-    position: fixed;
+  .wrapper {
+    overflow-x: hidden;
+
     nav {
       .nav_links {
         position: absolute;

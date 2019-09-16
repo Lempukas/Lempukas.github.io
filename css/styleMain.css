@@ -45,13 +45,10 @@ nav .nav_links li a {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    height: 100%;
-    overflow: hidden !important;
-    width: 100%;
-    position: fixed;
+  .wrapper {
+    overflow-x: hidden;
   }
-  body nav .nav_links {
+  .wrapper nav .nav_links {
     position: absolute;
     right: 0px;
     height: 92vh;
@@ -75,7 +72,7 @@ nav .nav_links li a {
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
-  body .hamburger {
+  .wrapper .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -90,13 +87,13 @@ nav .nav_links li a {
     height: 100%;
     justify-content: center;
   }
-  body div {
+  .wrapper div {
     width: 30px;
     height: 3px;
     background-color: white;
     margin: 3px;
   }
-  body nav .nav_active {
+  .wrapper nav .nav_active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
