@@ -34,6 +34,7 @@ nav .nav_links {
       -ms-flex-align: center;
           align-items: center;
   width: 60%;
+  height: 100%;
   list-style: none;
 }
 
@@ -58,7 +59,7 @@ nav .nav_links li a {
   .wrapper nav .nav_links {
     position: absolute;
     right: 0px;
-    min-height: 92vh;
+    height: 85vh;
     top: 8vh;
     background-color: grey;
     display: -webkit-box;
