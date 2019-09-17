@@ -12,7 +12,15 @@
 }
 
 nav {
-  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
   background-color: grey;
 }
 
@@ -20,33 +28,37 @@ nav .nav_links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  width: 50%;
-  height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: auto;
+  width: 60%;
+  height: 100%;
+  list-style: none;
 }
 
 nav .nav_links li a {
+  letter-spacing: 2px;
   color: white;
   text-decoration: none;
-  padding: 4em;
 }
 
 @media screen and (max-width: 768px) {
+  html,
   body {
+    width: 100%;
     overflow: hidden;
   }
-  nav .nav_links {
+  .wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .wrapper nav .nav_links {
     position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
-    color: black;
     background-color: grey;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -55,20 +67,14 @@ nav .nav_links li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    width: 0%;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
-  .hamburger {
+  .wrapper .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -80,21 +86,17 @@ nav .nav_links li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     height: 100%;
     justify-content: center;
   }
-  div {
+  .wrapper div {
     width: 30px;
     height: 3px;
     background-color: white;
     margin: 3px;
   }
-  nav .nav_active {
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%);
+  .wrapper nav .nav_active {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=styleMain.css.map */
