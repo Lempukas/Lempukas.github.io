@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>turiai</title>
+    <link rel="stylesheet" href="stilius.css" />
+  </head>
+  <body>
+    <button onclick="isvesti(), this.onclick=null;">Pradiniai duomenys</button>
+    <div class="container">
+      <table id="lentele">
+        <thead>
+          <tr>
+            <th>Ilgis</th>
+            <th>Plotis</th>
+            <th>Aukstis</th>
+          </tr>
+        </thead>
+        <tbody id="lentele1"></tbody>
+      </table>
+      <table id="lentele2">
+        <thead>
+          <tr>
+            <th>Turis</th>
+          </tr>
+        </thead>
+        <tbody id="lentele3">
+          <tr id="turiai"></tr>
+        </tbody>
+      </table>
+    </div>
+    <button onclick="suskaiciuoti(), this.onclick=null;">Rasti max</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
