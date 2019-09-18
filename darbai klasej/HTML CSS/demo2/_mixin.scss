@@ -1,9 +1,0 @@
-@mixin centerFlex($direction) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $direction;
-}
-@mixin plotis {
-  width: 50%;
-}
