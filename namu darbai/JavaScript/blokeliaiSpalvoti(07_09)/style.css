@@ -1,0 +1,7 @@
+p {
+    display: flex;
+    width: fit-content;
+}
+div {
+    width: 100%;
+}

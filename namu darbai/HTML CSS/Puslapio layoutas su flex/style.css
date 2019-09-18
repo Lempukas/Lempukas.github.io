@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    flex-flow: row;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;      
+}
+.logo img {
+    width: 80%;
+    display: flex;
+    flex: 1;
+}
+.navigation {
+   display: flex;
+   justify-content: center;
+    align-items: center;
+   flex: 4;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+li {
+    display: flex;
+    font-size: 1.7vw;
+}
+li a, a:visited {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    padding: 3vw 2vw;
+
+}
+.main {
+    background-image: url("middle_picture.png");
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 30vw;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main > div {
+    font-size: 10vw;
+    color: white;
+}
+.main a {
+    font-size: 4vw;
+    color: orange;
+}
+.middle {
+    display: flex;
+    margin: 2vw 0;
+}
+.middle div {
+    width: 25%;
+    display: flex;
+    flex: 1;
+    margin: 3vw;
+}
+.middle img {
+
+    width: 100%;
+    height: 100%;
+}
+.service {
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(206, 206, 206);
+}
+.top{
+    width: 100vw;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sesi {
+    width: 100%;
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.sesi div {
+    /* border: 2px solid green; */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: left;
+    width: 25vw;
+    margin: 2vw;
+    font-size: 1.3vw;
+    padding: 1.1vw;
+}
+.sesi > div:hover {
+    background-color: orange;
+    color: white;
+}
+.sesi  h1 {
+    padding: 0 2vw;
+    background-color:rgba(255, 255, 255, 0);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <div class="ivestiBtn">
+      <button id="iskviestiModala" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+        Ivesti automobilio duomenis
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Automobilis</h5>
+            <button id="dismissBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input id="automobilisInput" type="text" placeholder="Automobilis" />
+            <input id="numerisInput" type="text" placeholder="Numeris" />
+            <input id="greitisInput" type="text" placeholder="Greitis" />
+          </div>
+          <div class="modal-footer">
+            <div class="alert"></div>
+            <button id="atsaukti" type="button" class="btn btn-danger" data-dismiss="modal">
+              Atsaukti
+            </button>
+            <button id="saugoti" type="button" class="btn btn-success" data-dismiss="modal">
+              Saugoti
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDIT MODALAS -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Automobilis</h5>
+            <button id="dismissBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input id="automobilisInput3" type="text" placeholder="Automobilis" />
+            <input id="numerisInput3" type="text" placeholder="Numeris" />
+            <input id="greitisInput3" type="text" placeholder="Greitis" />
+          </div>
+          <div class="modal-footer">
+            <div class="alert3"></div>
+            <button id="atsaukti" type="button" class="btn btn-danger" data-dismiss="modal">
+              Atsaukti
+            </button>
+            <button id="saugoti3" type="button" class="btn btn-success" data-dismiss="modal">
+              Saugoti
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Lentele -->
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Automobilis</th>
+          <th>Numeris</th>
+          <th>Greitis</th>
+          <th>Veiksmai</th>
+        </tr>
+      </thead>
+      <tbody id="lentelesDuomenys"></tbody>
+    </table>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">DELETE</button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">DELETE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">Ar tikrai norite istrinti?</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">NE</button>
+            <a href="#delete" id="deleteConfirmBtn" class="btn btn-primary">TAIP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

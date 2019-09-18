@@ -1,0 +1,21 @@
+@import "spalvos";
+@import "mixin";
+
+.mazas {
+  color: $raudona;
+  p {
+    background-color: $zalia;
+  }
+}
+
+.didelis {
+  @include plotis();
+  background-color: $raudona;
+  color: $zalia;
+}
+.container {
+  @include centerFlex(column);
+}
+.container1 {
+  @include centerFlex(row);
+}

@@ -1,0 +1,79 @@
+.container {
+    width: 50%;
+    height: 50vw;
+    border:2px solid black;
+    background-color: rgb(211, 211, 211);
+    position:relative;
+    left: 25%;
+}
+.red {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    border: 5px solid red;
+    background-color: rgba(255, 0, 0, 0.315);
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    animation:animacija_red 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    transform: scale(0.1);
+}
+.green {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    border: 5px solid green;
+    background-color: rgba(30, 255, 0, 0.315);
+    position: absolute;
+    top: 20%;
+    left:20%;
+    animation:animacija_green 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    transform: scale(0.1);
+}
+.blue {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    border: 5px solid blue;
+    background-color: rgba(0, 38, 255, 0.315);
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    transform: scale(0.1);
+    animation:animacija_blue 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.container div div {
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+@keyframes animacija_red {
+    0% {bottom: 10%;right: 10%;}
+    50% {bottom: 5%;right: 5%;}
+    100% {bottom: 20%;right: 20%;}
+}
+@keyframes animacija_green {
+    0% {top: 20%;left: 20%;transform: scale(0.1);}
+    50% {top: 5%;left: 35%;transform: scale(1);}
+    100% {top: 20%;left: 20%;transform: scale(0.1);}
+} */
+@keyframes animacija_blue {
+    0% {top: 20%;left: 20%;}
+    25% {top: 35%;left: 20%;transform: scale(0.1);}
+    50% {top: 35%;left: 20%;transform: scale(0.4);}
+    100% {top: 35%;left: 20%;transform: scale(1);}
+}

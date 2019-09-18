@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    height: 5vw;
+    background-color: rgb(231, 231, 231);
+}
+.logo {
+        width: 30%;
+        height: 100%;
+        /* border: 2px solid black; */
+        float: left;
+}
+.logo img {
+    margin-left: 40%;
+    width: 50%;
+    transform: scale(0.8, 0.8);
+}
+
+.navigation {
+    width: 70%;
+    height: 100%;
+    /* border: 2px solid black; */
+    float: left;
+}
+ul {
+    padding: none;
+    font-size: 1vw;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 70%;
+    height: 100%;
+    margin-left: 20%;
+}
+li {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+    height: 75%;
+    float: left;
+    border-right: 1px solid rgb(151, 151, 151);
+    margin-top: 1.5%;
+    /* margin-left: 4%; */
+
+}
+li:last-child{
+    border: none;
+}
+
+li a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 28% 0;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+    
+}
+.main{
+    width: 100%;
+    height: 36vw;
+    float: left;
+}
+.middle_picture img {
+    width: 100%;
+    height: 50%;
+}
+.middle_picture {
+    position: relative;
+}
+.read_more {
+    width: 6%;
+    height: 6%;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    top:60%;
+    left:50%;
+    font-size: 0.9vw;
+}
+.read_more a {
+    text-decoration: none;
+    color: inherit;
+}
+.clear{
+    clear: both;
+}
+.middle {
+    width: 100%;
+    height: 22vw;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    /* border: 10px solid black; */
+}
+.first {
+    width: 25%;
+    height: 75%;
+    float: left;
+    margin: 3%;
+
+}
+.second {
+    width: 25%;
+    height: 75%;
+    float: left;
+    margin: 3% 6.5%;
+}
+.third {
+    width: 25%;
+    height: 75%;
+    float: right;
+    margin: 3%;
+}
+.first img {
+    width: 100%;
+    height: 100%;
+}
+.second img {
+    width: 100%;
+    height: 100%;
+}
+.third img {
+    width: 100%;
+    height: 100%;
+}
+.service {
+    width: 100%;
+    height: 60vw;
+    background-color: rgb(224, 224, 224);
+    padding-top:1vw;
+}
+.service .top{
+    width:100%;
+    /* height: 20vw; */
+    /* border: 2px solid black; */
+}
+
+.top p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service p {
+    font-size: 1.5vw;
+    color:rgb(110, 110, 110);
+    text-align: center;
+    /* display: inline-block; */
+    justify-content: center;
+    align-items: center;
+}
+.service .pirmas {
+    /* border: 2px solid black; */
+    background-color: white;
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin: 3%;
+    display: inline-block;
+}
+.service .antras {
+    background-color: white;
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin: 3% 6.5%;
+}
+.service .trecias {
+    background-color: white;
+    width: 25%;
+    height: 25%;
+    float: right;
+    margin: 3%;
+}
+.service .ketvirtas {
+    background-color: white;
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin: 3%;
+}
+.service .penktas {
+    background-color: white;
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin: 3% 6.5%;
+}
+.service .sestas {
+    background-color: white;
+    width: 25%;
+    height: 25%;
+    float: right;
+    margin: 3%;
+    
+}
+.pirmas:hover {
+    color:white;
+    background-color: orange;
+}
+.pirmas:hover p {
+    color:white;
+    background-color: orange;
+}
+
+.antras:hover {
+    color:white;
+    background-color: orange;
+}
+.antras:hover p {
+    color:white;
+    background-color: orange;
+}
+.trecias:hover p {
+    color:white;
+    background-color: orange;
+}
+.trecias:hover {
+    color:white;
+    background-color: orange;
+}
+.ketvirtas:hover {
+    color:white;
+    background-color: orange;
+}
+.ketvirtas:hover p {
+    color:white;
+    background-color: orange;
+}
+.penktas:hover {
+    color:white;
+    background-color: orange;
+}
+.penktas:hover p {
+    color:white;
+    background-color: orange;
+}
+.sestas:hover {
+    color:white;
+    background-color: orange;
+}
+.sestas:hover p {
+    color:white;
+    background-color: orange;
+}
+.service h1 {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+.top h1 {
+    font-size: 4vw;
+    color:rgb(39, 39, 39);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+.service p {
+    text-align: left;
+    font-size: 1.2vw;
+    padding-left: 1.2vw;
+}
+
+.ikona {
+    font-size: 1.5vw;
+    float: left;
+    width: 2vw;
+    padding: 1.5vw;
+}
+.footer {
+    width: 100%;
+    height: 25vw;
+    background: linear-gradient(rgba(3, 112, 214, 0.4), rgba(3, 112, 214, 0.4)),url('2.jpg');
+    background-size: 100%;
+}
+.footer div {
+    /* display: block; */
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: white;
+    margin-top: 9%;
+    font-size: 2.5vw;
+}

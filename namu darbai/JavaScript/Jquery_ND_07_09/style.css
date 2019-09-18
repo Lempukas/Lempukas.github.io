@@ -1,0 +1,21 @@
+.apskritimas1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fdb913;
+}
+.apskritimas2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #006a44;
+}
+.apskritimas3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #c1272d;
+}
+.para {
+  padding: 2em;
+}
