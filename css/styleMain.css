@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+html,
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 5vw;
+}
+
+.logo a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.logo img {
+  height: 13vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  overflow: hidden;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 6vw;
+  background-color: #f0f0f0;
+}
+
+.header nav .nav_links {
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  height: 85vh;
+  top: 25vw;
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 0%;
+  z-index: 1;
+  list-style: none;
+  -webkit-transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.header nav .nav_links a {
+  color: black;
+  position: relative;
+  left: 32vw;
+  text-decoration: none;
+  letter-spacing: 2px;
+  opacity: 0;
+  font-size: 3.5vw;
+  -webkit-transition: opacity 1s ease-in-out, left 0.7s ease-in-out;
+  transition: opacity 1s ease-in-out, left 0.7s ease-in-out;
+}
+
+.header nav .nav_links a:visited {
+  color: black;
+}
+
+.header nav .nav_links a:hover {
+  color: black;
+}
+
+.header .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.header div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+}
+
+.header nav .nav_active {
+  width: 40%;
+}
+
+.header nav li .nav_links_fade {
+  opacity: 1;
+  position: relative;
+  left: 0vw;
+}
+
+.single-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5%;
+}
+
+.single-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.single-item div img {
+  width: 100%;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arrowLeft {
+  width: 5%;
+  margin: 1%;
+  opacity: 0.5;
+}
+
+.arrowRight {
+  width: 5%;
+  opacity: 0.5;
+  margin: 1%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #f0f0f0;
+  padding: 3vw 0;
+}
+
+.footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer div p {
+  font-size: 3vw;
+}
+
+.footer div a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer div a:visited {
+  color: black;
+}
+
+.footer div a:hover {
+  color: black;
+}
+
+.footer div a:active {
+  color: black;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70vh;
+}
+/*# sourceMappingURL=styleMain.css.map */
