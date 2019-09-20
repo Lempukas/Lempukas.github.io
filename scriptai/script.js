@@ -10,12 +10,6 @@ $(document).ready(function() {
   $(".ikvepimui1").animate({ opacity: 0 }, 1);
   $("#logo").hide();
 
-  // $(".logo").animate({ opacity: 0 }, 1);
-  //curved menu text
-  $("#apie").arctext({ radius: 70, dir: 1 });
-  $("#kontaktai").arctext({ radius: 70, dir: -1 });
-  $("#portfolio").arctext({ radius: 70, dir: 1 });
-  $("#ikvepimui").arctext({ radius: 70, dir: -1 });
   // LOGO ATSIRANDA
   $("#logo").fadeIn(500);
   //menu on hover atsiranda
@@ -23,8 +17,14 @@ $(document).ready(function() {
     function(e) {
       $(".apie2").show();
       $(".portfolio2").show();
-      $(".kontaktai").show();
+      $(".kontaktai2").show();
       $(".ikvepimui2").show();
+      // $(".logo").animate({ opacity: 0 }, 1);
+      //curved menu text
+      $("#portfolio").arctext({ radius: 70, dir: 1 });
+      $("#apie").arctext({ radius: 70, dir: 1 });
+      $("#kontaktai").arctext({ radius: 70, dir: -1 });
+      $("#ikvepimui").arctext({ radius: 70, dir: -1 });
       $(".apie1").hoverFlow(e.type, { left: -20, top: -20, opacity: 1 }, 400, "swing");
       $(".portfolio1").hoverFlow(e.type, { left: 20, top: -20, opacity: 1 }, 400, "swing");
       $(".kontaktai1").hoverFlow(e.type, { left: -20, top: 20, opacity: 1 }, 400, "swing");

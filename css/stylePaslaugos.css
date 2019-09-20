@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 html,
@@ -62,7 +62,7 @@ body {
   overflow: hidden;
   position: absolute;
   right: 0px;
-  height: 85vh;
+  min-height: 80vh;
   top: 25vw;
   background-color: #f0f0f0;
   display: -webkit-box;
@@ -75,13 +75,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 0%;
   z-index: 1;
   list-style: none;
   -webkit-transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.header nav .nav_links li {
+  padding: 10% 0;
 }
 
 .header nav .nav_links a {
@@ -210,55 +215,7 @@ body {
   color: black;
 }
 
-.galery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.galery h1 {
-  padding: 5% 0;
-  letter-spacing: 1px;
-  font-size: 1.1em;
-}
-
-.dropdown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .dropdownContent {
-  display: none;
-  font-size: 12px;
-  position: relative;
-  opacity: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  height: 0%;
-}
-
-.dropdown:hover .dropdownContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,9 +223,28 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.dropLinks {
+  font-size: 0.8em !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 1;
+  padding: 5%;
 }
-/*# sourceMappingURL=styleGalerija.css.map */
+
+.dropBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=stylePaslaugos.css.map */
